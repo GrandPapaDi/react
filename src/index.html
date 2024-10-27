@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>«Empty Page»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>«Empty Page»</h1>
+		<div class="rootpage__info">
+			Description of the project
+		</div>
+		<h2>Ready pages:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">main</a></li>
+			<li><a target="_blank" href="works.html">works</a></li>
+			<li><a target="_blank" href="about-me.html">about-me</a></li>
+			<li><a target="_blank" href="contacts.html">contacts</a></li>
+		</ol>
+		<div class="rootpage__tnx">
+			<h2>Thank you for your order!</h2>
+			<p>I will be glad (yes) good response.</p>
+			<p>Contact yet!</p>
+		</div>
+		<div class="rootpage__contacts">
+			<h2>My contacts:</h2>
+			<p>Mail: <a href="mailto:veradocxl@gmail.com">veradocxl@gmail.com</a></p>
+			<p>Phone: <a href="tel:+491627651680">+491627651680</a></p>
+			<div class="item-media">
+				<h4 class="item-media__label" id="footer-media-label">Media:</h4>
+				<ul class="item-media__list">
+					<li class="item-media__item">
+						<a href="Discord: grand_pappa_disashko" target="_blank"
+							class="item-media__link _icon-git button button--transparent">
+							<img src="@img/icons-media/disc.svg" alt="Image">
+						</a>
+					</li>
+					<li class="item-media__item">
+						<a href="https://www.linkedin.com/in/oleksandr-grymut-a34294272/" target="_blank"
+							class="item-media__link button button--transparent">
+							<img src="@img/icons-media/insta.svg" alt="Image">
+						</a>
+					</li>
+					<li class="item-media__item">
+						<a href="https://t.me/grandpappadi" target="_blank"
+							class="item-media__link _icon-telgram  button button--transparent">
+							<img src="@img/icons-media/telgram.svg" alt="Image">
+						</a>
+					</li>
+					<li class="item-media__item">
+						<a href="https://wa.me/+491627651680" target="_blank"
+							class="item-media__link _icon-whatsapp button button--transparent">
+							<img src="@img/icons-media/whatsapp.svg" alt="Image">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background: radial-gradient(35% 60% at 1% 43%,
+				rgba(44, 6, 60) 10%,
+				rgba(1, 1, 1, 1) 100%);
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: radial-gradient(27.26% 47.26% at 1% 43%,
+				rgba(44, 6, 60) 0%,
+				rgba(1, 1, 1, 1) 100%);
+
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: radial-gradient(27.26% 47.26% at 1% 43%,
+				rgba(44, 6, 60) 0%,
+				rgba(1, 1, 1, 1) 100%);
+		margin: 0px 0px 1rem 0px;
+	}
+
+	.item-media {
+		display: flex;
+		gap: 10px;
+	}
+
+
+	.item-media__label {
+		font-weight: 500;
+		font-size: toRem(16);
+	}
+
+	.item-media__list {
+		display: flex;
+		gap: 10px;
+	}
+
+	.item-media__item {
+		transition: all 0.3s ease 0s;
+	}
+
+	.item-media__item:hover {
+		transform: scale(1.1);
+	}
+
+	.item-media__item .item-media__link {
+		color: #abb2bf;
+		font-size: toRem(16);
+	}
+</style>
+
+</html>
